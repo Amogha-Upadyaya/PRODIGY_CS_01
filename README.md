@@ -1,24 +1,28 @@
 # PRODIGY_CS_01
 The following repository documents the Task-01 assigned during my Cybersecurity Internship at Prodigy InfoTech
 
-## Aim
-Create a Python program that can encrypt and decrypt text using the Caesar Cipher Algorithm. Allow users to input a message and a shift value to perform encryption and decryption.
+## Description
+**_Caesar Cipher - Text Encryption and Decryption Tool_**
 
-# Caesar Cipher Algorithm
-## Encryption
-1. Take plaintext message (string) and shift value (integer between 1 and 25) as input
-2. For every character in the plaintext, check if the character is an alphabet.
-3. Convert the character to its numerical position in the alphabet
-4. Add the shift value to the numerical position
-5. Apply the modulo operation with 26 to ensure the result stays within the alphabetical range. Accounts for wrapping around the alphabet.
-6. Convert the resulting number back to its corresponding character.
-7. Output the encrypted ciphertext message
+The Python Program implements the Caesar Cipher algorithm for encrypting and decrypting text messages. It allows users to choose between encryption and decryption and provides a user-friendly interface for entering messages and shift values.
 
-## Decryption
-1. Take cipher text message (string) and shift value (key for encryption) as input
-2. For every character in the plaintext, check if the character is an alphabet.
-3. Convert the character to its numerical position in the alphabet.
-4. Subtract the shift value from the numerical position
-5. Apply the modulo operation with 26 to ensure the result stays within the alphabetical range
-6. Conver the resulting number back to its corresponding character
-7. Output the decrypted plaintext message
+## Key Functionalities
+- Encrypts text messages using the Caesar Cipher algorithm.
+- Decrypts encrypted messages using the Caesar Cipher algorithm.
+- Handles both uppercase and lowercase letters.
+- Maintains non-alphabetic characters during encryption/decryption.
+- Provides user input prompts for message and shift value.
+- Validates user input for the shift value (integer only).
+- Displays clear messages for successful encryption/decryption or invalid input.
+
+## Technical Specifications
+- Programming Language: Python
+- Uses only built-in Python functionalities
+
+## How to Use:
+1. Clone or download this repository.
+2. Run main.py to execute the program.
+3. Follow the on-screen instructions to choose encryption or decryption.
+4. Enter the message you want to encrypt/decrypt.
+5. Enter the shift value (key) for the Caesar Cipher.
+6. The program will display the encrypted/decrypted message.

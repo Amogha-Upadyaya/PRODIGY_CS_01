@@ -11,6 +11,25 @@
 10. **Transposition Ciphers** => Rearranges the order of the letters in the plaintext without changing the letters themselves.
 11. **Modern Ciphers** => More complex algorithms that often comvine elements of substitution and transposition, and use mathematical operations to achieve much strongs encryption.
 
+# Caesar Cipher Algorithm
+## Encryption
+1. Take plaintext message (string) and shift value (integer between 1 and 25) as input
+2. For every character in the plaintext, check if the character is an alphabet.
+3. Convert the character to its numerical position in the alphabet
+4. Add the shift value to the numerical position
+5. Apply the modulo operation with 26 to ensure the result stays within the alphabetical range. Accounts for wrapping around the alphabet.
+6. Convert the resulting number back to its corresponding character.
+7. Output the encrypted ciphertext message
+
+## Decryption
+1. Take cipher text message (string) and shift value (key for encryption) as input
+2. For every character in the plaintext, check if the character is an alphabet.
+3. Convert the character to its numerical position in the alphabet.
+4. Subtract the shift value from the numerical position
+5. Apply the modulo operation with 26 to ensure the result stays within the alphabetical range
+6. Conver the resulting number back to its corresponding character
+7. Output the decrypted plaintext message
+
 # Caesar Cipher
 - It's a type of substitution cipher, which means it scrambles messages by replacing letters with different ones according to a fixed rule.
 - Each letter in the message is shifted by a certain number of positions down the alphabet. It also wraps around the alphabet.
