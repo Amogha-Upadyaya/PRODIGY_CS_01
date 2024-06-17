@@ -28,3 +28,6 @@ The Python Program implements the Caesar Cipher algorithm for encrypting and dec
 6. The program will display the encrypted/decrypted message.
 
 # Sample Output
+When run on Git Bash
+
+![image](https://github.com/Amogha-Upadyaya/PRODIGY_CS_01/assets/120311753/8afa8685-b35d-44e3-8f7b-394d1cc9a476)
