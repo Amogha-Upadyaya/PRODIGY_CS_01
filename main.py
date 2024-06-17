@@ -12,7 +12,7 @@ while True:
             print("Invalid key. Please enter an Integer.")
             continue # Skip to next iteration if key is not an integer
 
-        CipherText = CaesarCipher.CCEncrypt(PlainText, Key, mode="encrypt")
+        CipherText = CaesarCipher.CCEncrypt(PlainText, Key)
         # Print Encrypted/Cipher Message
         print(f"Encrypted Message: %s" % CipherText)
     
@@ -24,7 +24,7 @@ while True:
             print("Invalid key. Please enter an integer.")
             continue # Skip to next iteration if key is not an integer
 
-        PlainText = CaesarCipher.CCDecrypt(CipherText, Key, mode="decrypt")
+        PlainText = CaesarCipher.CCDecrypt(CipherText, Key)
         print(f"Decrypted Message: %s" % PlainText) # Print Decrypted/PlainText Message
     
     elif opt == 3:
