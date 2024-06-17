@@ -30,4 +30,5 @@ The Python Program implements the Caesar Cipher algorithm for encrypting and dec
 # Sample Output
 When run on Git Bash
 
-![image](https://github.com/Amogha-Upadyaya/PRODIGY_CS_01/assets/120311753/8afa8685-b35d-44e3-8f7b-394d1cc9a476)
+![image](https://github.com/Amogha-Upadyaya/PRODIGY_CS_01/assets/120311753/60d01ec9-1fc0-4a1e-83e6-3097f3212150)
+
