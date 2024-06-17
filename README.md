@@ -14,7 +14,7 @@ Create a Python program that can encrypt and decrypt text using the Caesar Ciphe
 6. Convert the resulting number back to its corresponding character.
 7. Output the encrypted ciphertext message
 
-## Decrytion
+## Decryption
 1. Take cipher text message (string) and shift value (key for encryption) as input
 2. For every character in the plaintext, check if the character is an alphabet.
 3. Convert the character to its numerical position in the alphabet.
