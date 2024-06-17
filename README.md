@@ -2,7 +2,9 @@
 The following repository documents the Task-01 assigned during my Cybersecurity Internship at Prodigy InfoTech
 
 ## Description
-Create a Python program that can encrypt and decrypt text using the Caesar Cipher Algorithm. Allow users to input a message and a shift value to perform encryption and decryption.
+**_Caesar Cipher - Text Encryption and Decryption Tool_**
+
+The Python Program implements the Caesar Cipher algorithm for encrypting and decrypting text messages. It allows users to choose between encryption and decryption and provides a user-friendly interface for entering messages and shift values.
 
 ## Key Functionalities
 - Encrypts text messages using the Caesar Cipher algorithm.
