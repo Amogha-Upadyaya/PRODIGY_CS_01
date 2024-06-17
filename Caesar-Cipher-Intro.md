@@ -11,19 +11,38 @@
 10. **Transposition Ciphers** => Rearranges the order of the letters in the plaintext without changing the letters themselves.
 11. **Modern Ciphers** => More complex algorithms that often comvine elements of substitution and transposition, and use mathematical operations to achieve much strongs encryption.
 
+# Caesar Cipher Algorithm
+## Encryption
+1. Take plaintext message (string) and shift value (integer between 1 and 25) as input
+2. For every character in the plaintext, check if the character is an alphabet.
+3. Convert the character to its numerical position in the alphabet
+4. Add the shift value to the numerical position
+5. Apply the modulo operation with 26 to ensure the result stays within the alphabetical range. Accounts for wrapping around the alphabet.
+6. Convert the resulting number back to its corresponding character.
+7. Output the encrypted ciphertext message
+
+## Decryption
+1. Take cipher text message (string) and shift value (key for encryption) as input
+2. For every character in the plaintext, check if the character is an alphabet.
+3. Convert the character to its numerical position in the alphabet.
+4. Subtract the shift value from the numerical position
+5. Apply the modulo operation with 26 to ensure the result stays within the alphabetical range
+6. Conver the resulting number back to its corresponding character
+7. Output the decrypted plaintext message
+
 # Caesar Cipher
 - It's a type of substitution cipher, which means it scrambles messages by replacing letters with different ones according to a fixed rule.
 - Each letter in the message is shifted by a certain number of positions down the alphabet. It also wraps around the alphabet.
 - For example; 'X' is shifted by 3 to become 'A'
 
-###### Advantages/Benefits of Caesar Cipher
+## Advantages/Benefits of Caesar Cipher
 - **Easy to implement and use** => Caesar Cipher uses basic math operations and requires minimal knowledge to understand.
 - **Low resource Requirements** => Algorithm's efficiency and minimal computing power requirements make it suitable for low-tech environments or situations with limited resources
 - **Simple Key Management** => Uses only a single short key i.e. Shift Value making it easy to remember and share among trusted individuals
 - **Physical Implementation** => Can be implemented with physical tools like rotating discs or cards
 - Foundation for More Complex Ciphers => More secure variations of the algorithm can be created by combining multiple Caesar Ciphers with different shift values or using keywords.
 
-###### Disadvantages/Drawbacks of Caesar Cipher
+## Disadvantages/Drawbacks of Caesar Cipher
 - **Weak Security** => With only 26 possible shift values, a brute-force attack can easily crack the code by trying all possibel shifts until a decipherable message is found.
 - **Limited Keyspace** => Total number of possible keys isvery limited, making it significantly easier to creack compared to ciphers with much larger keyspaces
 - **Susceptible to Frequency Analysis** => Statistical analysis of the encrypted text can reveal patterns in letter frequencies, which can be used to identify the shift value and decrypt the message
