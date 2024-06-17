@@ -15,8 +15,7 @@ def main():
                 continue # Skip to next iteration if key is not an integer
 
             CipherText = CaesarCipher.CCEncrypt(PlainText, Key)
-            # Print Encrypted/Cipher Message
-            print(f"Encrypted Message: %s" % CipherText)
+            print(f"Encrypted Message: %s" % CipherText) # Print Encrypted/Cipher Message
         
         elif opt == 2:
             CipherText = input("Enter the message to decrypt: ")
