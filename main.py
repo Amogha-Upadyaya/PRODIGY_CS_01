@@ -8,7 +8,7 @@ while True:
         PlainText = input("Enter the message to encrypt: ")
         Key = int(input("Enter the shift value (key): "))
 
-        CipherText = CaesarCipher(PlainText, Key, mode="encrypt")
+        CipherText = CaesarCipher.CC(PlainText, Key, mode="encrypt")
         print(f"Encrypted Message: %s" % CipherText)
     
     elif opt == 2:
