@@ -1,4 +1,4 @@
-def CaesarCipher(text, shift, mode=""):
+def CC(text, shift, mode=""):
     Alpha = "abcdefghijklmnopqrstuvwxyz"
     Caps = Alpha.upper()
     result = ""
@@ -14,6 +14,6 @@ def CaesarCipher(text, shift, mode=""):
         result += NewChar
     
     if mode == "decrypt":
-        result = CaesarCipher(result, -shift)
+        result = CC(result, -shift)
     
     return result
