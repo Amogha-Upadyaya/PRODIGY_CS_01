@@ -11,7 +11,7 @@ def CC(text, shift, mode=""):
                 NewChar = Alpha[NewIndex] if char.islower() else Caps[NewIndex]
             else:
                 NewChar = char
-        result += NewChar
+            result += NewChar
     
     if mode == "decrypt":
         result = CC(result, -shift)
