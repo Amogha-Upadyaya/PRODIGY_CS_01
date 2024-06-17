@@ -12,7 +12,7 @@ def CCEncrypt(text, shift, mode=""):
             else:
                 NewChar = char # Keep non-alphabetic character unchanged
             result += NewChar # Append new character to encrypted text
-            return result # Return the encrypted text
+    return result # Return the encrypted text
 
 def CCDecrypt(text, shift, mode=""):
     if mode == "decrypt": # Check if mode is decryption
