@@ -4,13 +4,13 @@ def CC(text, shift, mode=""):
     result = ""
     
     if mode == "encrypt":
-        if char.isalpha():
-            for char in text:
+        for char in text:
+            if char.isalpha():
                 Index = Alpha.find(char.lower()) if char.islower else Caps.find(char)
                 NewIndex = (Index+shift)%26
                 NewChar = Alpha[NewIndex] if char.islower() else Caps[NewIndex]
-        else:
-            NewChar = char
+            else:
+                NewChar = char
         result += NewChar
     
     if mode == "decrypt":
