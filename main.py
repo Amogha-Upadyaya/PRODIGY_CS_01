@@ -2,7 +2,7 @@ import CaesarCipher # Import the CaesarCipher Module
 
 def main():
     while True:
-        print("\nCASER CIPHER")
+        print("\nCAESAR CIPHER")
         print("1. Encrypt\n2. Decrypt\n3. Exit")
         opt = int(input("Enter the index number corresponding your choice: ")) # Get user choice
 
