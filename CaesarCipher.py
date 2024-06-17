@@ -17,3 +17,4 @@ def CCEncrypt(text, shift, mode=""):
 def CCDecrypt(text, shift, mode=""):
     if mode == "decrypt":
         result = CCEncrypt(text, -shift)
+        return result
