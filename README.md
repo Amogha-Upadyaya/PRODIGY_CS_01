@@ -26,3 +26,5 @@ The Python Program implements the Caesar Cipher algorithm for encrypting and dec
 4. Enter the message you want to encrypt/decrypt.
 5. Enter the shift value (key) for the Caesar Cipher.
 6. The program will display the encrypted/decrypted message.
+
+# Sample Output
