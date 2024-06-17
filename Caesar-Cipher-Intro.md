@@ -16,14 +16,14 @@
 - Each letter in the message is shifted by a certain number of positions down the alphabet. It also wraps around the alphabet.
 - For example; 'X' is shifted by 3 to become 'A'
 
-## Advantages/Benefits of Caesar Cipher
+###### Advantages/Benefits of Caesar Cipher
 - **Easy to implement and use** => Caesar Cipher uses basic math operations and requires minimal knowledge to understand.
 - **Low resource Requirements** => Algorithm's efficiency and minimal computing power requirements make it suitable for low-tech environments or situations with limited resources
 - **Simple Key Management** => Uses only a single short key i.e. Shift Value making it easy to remember and share among trusted individuals
 - **Physical Implementation** => Can be implemented with physical tools like rotating discs or cards
 - Foundation for More Complex Ciphers => More secure variations of the algorithm can be created by combining multiple Caesar Ciphers with different shift values or using keywords.
 
-## Disadvantages/Drawbacks of Caesar Cipher
+###### Disadvantages/Drawbacks of Caesar Cipher
 - **Weak Security** => With only 26 possible shift values, a brute-force attack can easily crack the code by trying all possibel shifts until a decipherable message is found.
 - **Limited Keyspace** => Total number of possible keys isvery limited, making it significantly easier to creack compared to ciphers with much larger keyspaces
 - **Susceptible to Frequency Analysis** => Statistical analysis of the encrypted text can reveal patterns in letter frequencies, which can be used to identify the shift value and decrypt the message
