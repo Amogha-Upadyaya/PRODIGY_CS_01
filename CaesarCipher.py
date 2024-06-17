@@ -1,4 +1,4 @@
-def CC(text, shift, mode=""):
+def CCEncrypt(text, shift, mode=""):
     Alpha = "abcdefghijklmnopqrstuvwxyz"
     Caps = Alpha.upper()
     result = ""
@@ -12,8 +12,8 @@ def CC(text, shift, mode=""):
             else:
                 NewChar = char
             result += NewChar
-    
-    if mode == "decrypt":
-        result = CC(result, -shift)
-    
     return result
+
+def CCDecrypt(text, shift, mode=""):
+    if mode == "decrypt":
+        result = CCEncrypt(result, -shift)
